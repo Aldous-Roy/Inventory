@@ -13,3 +13,10 @@ products=[
 @app.get("/products")
 def get_products():
     return {"products": products}
+
+@app.get("/products/{id}")
+def get_Product_by_id(id:int):
+    for product in products:
+        if product.id==id:
+            return {"product": product}
+    return {"message": "Product not found"}
