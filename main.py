@@ -8,8 +8,8 @@ def greet():
 
 products=[
     product(id=1, name="Laptop", description="A high-performance laptop", price=999.99, quantity=10),
-    product(id=2, name="Smartphone", description="A latest model smartphone", price=599.99, quantity=20)
-    
+    product(id=2, name="Smartphone", description="A latest model smartphone", price=599.99, quantity=20),
+    product(id=3, name="Headphones", description="Noise-cancelling headphones", price=199.99, quantity=15) 
 ]
 @app.get("/products")
 def get_products():
